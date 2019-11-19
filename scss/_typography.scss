@@ -1,0 +1,31 @@
+// ### Fonts
+// - Family: [Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans)
+// - Weights: 300, 600, 800
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,800&display=swap");
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+// ### Body Copy
+// - Homepage Items: 14px
+// - Detail Page: 16px
+
+.page-title {
+  font-size: 25px;
+  font-weight: 800;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.button__icon {
+  padding-right: 10px;
+}

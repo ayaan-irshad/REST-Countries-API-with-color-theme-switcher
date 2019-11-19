@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Where in the world? | Country Finder</title>
+  <link rel="stylesheet" href="scss/main.css" />
+  <script src="https://kit.fontawesome.com/3bad4699d3.js" crossorigin="anonymous"></script>
+  <script src="scripts/xhr.js" defer></script>
+  <script src="scripts/domElements.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <!-- Heading section -->
+  <header class="banner">
+    <h1 class="page-title">Where in the world?</h1>
+    <!-- Dark mode switcher link + icon -->
+    <!-- <button class="button">
+        <i class="far fa-moon button__icon"></i>Dark Mode
+      </button> -->
+  </header>
+
+  <div class="container">
+    <!-- Country searching and filtering -->
+    <nav class="content-filter">
+      <div class="search-container">
+        <i class="fas fa-search"></i>
+        <input type="search" placeholder="Search for a country..." class="search-bar" />
+      </div>
+      <select name="regionFilter" id="region-filter" class="dropdown-filter">
+        <option value="" selected>Filter by Region</option>
+        <option>Africa</option>
+        <option>Americas</option>
+        <option>Asia</option>
+        <option>Europe</option>
+        <option>Oceania</option>
+      </select>
+    </nav>
+
+    <!-- Country grid -->
+    <div class="country-grid"></div>
+  </div>
+</body>
+
+</html>
