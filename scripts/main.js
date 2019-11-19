@@ -25,8 +25,8 @@ const renderCountries = filters => {
                   >Population:</span
                 >
                 ${element.population
-                  .toString()
-                  .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}
+          .toString()
+          .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}
               </li>
               <li>
                 <span class="card__text-container--list-title">Region:</span>
@@ -57,11 +57,11 @@ regionFilter.addEventListener("change", e => {
 countryContainerEl.addEventListener("click", e => {
   if (e.target.parentElement.classList.contains("card")) {
     location.assign(
-      `/country.html#${e.target.parentElement.attributes["data-countryiso"].value}`
+      `./country.html#${e.target.parentElement.attributes["data-countryiso"].value}`
     );
   } else if (e.target.parentElement.parentElement.classList.contains("card")) {
     location.assign(
-      `/country.html#${e.target.parentElement.parentElement.attributes["data-countryiso"].value}`
+      `./country.html#${e.target.parentElement.parentElement.attributes["data-countryiso"].value}`
     );
   } else if (
     e.target.parentElement.parentElement.parentElement.classList.contains(
@@ -69,7 +69,7 @@ countryContainerEl.addEventListener("click", e => {
     )
   ) {
     location.assign(
-      `/country.html#${e.target.parentElement.parentElement.parentElement.attributes["data-countryiso"].value}`
+      `./country.html#${e.target.parentElement.parentElement.parentElement.attributes["data-countryiso"].value}`
     );
   } else if (
     e.target.parentElement.parentElement.parentElement.parentElement.classList.contains(
@@ -77,7 +77,7 @@ countryContainerEl.addEventListener("click", e => {
     )
   ) {
     location.assign(
-      `/country.html#${e.target.parentElement.parentElement.parentElement.parentElement.attributes["data-countryiso"].value}`
+      `./country.html#${e.target.parentElement.parentElement.parentElement.parentElement.attributes["data-countryiso"].value}`
     );
   }
 });
