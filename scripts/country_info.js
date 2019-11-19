@@ -13,7 +13,7 @@ xhr.send();
 const backButton = document.querySelector(".button--shadow");
 
 backButton.addEventListener("click", () => {
-  location.assign("/index.html");
+  location.assign("./index.html");
 });
 
 const countryInfoContainerEl = document.querySelector(".country-section");
@@ -44,8 +44,8 @@ const renderCountryInfo = country => {
       </li>
       <li>
         <span class="list-title">Population:</span> ${country.population
-          .toString()
-          .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}
+      .toString()
+      .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")}
       </li>
       <li><span class="list-title">Region:</span> ${country.region}</li>
       <li>
@@ -58,18 +58,18 @@ const renderCountryInfo = country => {
     <ul>
       <li>
         <span class="list-title">Top Level Domain: ${
-          country.topLevelDomain
-        }</span>
+    country.topLevelDomain
+    }</span>
       </li>
       <li>
         <span class="list-title">Currencies: ${createList(
-          country.currencies
-        )}</span>
+      country.currencies
+    )}</span>
       </li>
       <li>
         <span class="list-title">Languages: ${createList(
-          country.languages
-        )}</span>
+      country.languages
+    )}</span>
       </li>
     </ul>
   </div>
