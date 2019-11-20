@@ -57,11 +57,11 @@ regionFilter.addEventListener("change", e => {
 countryContainerEl.addEventListener("click", e => {
   if (e.target.parentElement.classList.contains("card")) {
     location.assign(
-      `./country.html#${e.target.parentElement.attributes["data-countryiso"].value}`
+      `https://tgusterson.github.io/REST-Countries-API-with-color-theme-switcher/country.html#${e.target.parentElement.attributes["data-countryiso"].value}`
     );
   } else if (e.target.parentElement.parentElement.classList.contains("card")) {
     location.assign(
-      `./country.html#${e.target.parentElement.parentElement.attributes["data-countryiso"].value}`
+      `https://tgusterson.github.io/REST-Countries-API-with-color-theme-switcher//country.html#${e.target.parentElement.parentElement.attributes["data-countryiso"].value}`
     );
   } else if (
     e.target.parentElement.parentElement.parentElement.classList.contains(
@@ -69,7 +69,7 @@ countryContainerEl.addEventListener("click", e => {
     )
   ) {
     location.assign(
-      `./country.html#${e.target.parentElement.parentElement.parentElement.attributes["data-countryiso"].value}`
+      `https://tgusterson.github.io/REST-Countries-API-with-color-theme-switcher//country.html#${e.target.parentElement.parentElement.parentElement.attributes["data-countryiso"].value}`
     );
   } else if (
     e.target.parentElement.parentElement.parentElement.parentElement.classList.contains(
@@ -77,7 +77,7 @@ countryContainerEl.addEventListener("click", e => {
     )
   ) {
     location.assign(
-      `./country.html#${e.target.parentElement.parentElement.parentElement.parentElement.attributes["data-countryiso"].value}`
+      `https://tgusterson.github.io/REST-Countries-API-with-color-theme-switcher//country.html#${e.target.parentElement.parentElement.parentElement.parentElement.attributes["data-countryiso"].value}`
     );
   }
 });
